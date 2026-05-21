@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # 5. Copier d'abord le fichier requirements.txt pour installer les dépendances
 COPY requirements.txt /app/
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirement.txt
 
 # 6. Copier tout le reste du code de ton projet (tes dossiers, ton modèle .joblib)
 COPY . /app/
